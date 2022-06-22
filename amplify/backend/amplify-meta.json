@@ -1,0 +1,73 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-clientmobile-dev-170406-authRole",
+      "UnauthRoleArn": "arn:aws:iam::567155312519:role/amplify-clientmobile-dev-170406-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::567155312519:role/amplify-clientmobile-dev-170406-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-clientmobile-dev-170406-deployment",
+      "UnauthRoleName": "amplify-clientmobile-dev-170406-unauthRole",
+      "StackName": "amplify-clientmobile-dev-170406",
+      "StackId": "arn:aws:cloudformation:us-east-1:567155312519:stack/amplify-clientmobile-dev-170406/b8a69270-d845-11ec-9f70-0e8a21df2af5",
+      "AmplifyAppId": "d1wfuhxkh7oaqt"
+    }
+  },
+  "auth": {
+    "clientmobile": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 6,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "output": {
+        "UserPoolId": "us-east-1_8rzdOpiz5",
+        "AppClientIDWeb": "59d9d44gbj46100ej88sdqipop",
+        "AppClientID": "1h03hj6lghi2aqaaed0cuj34m6",
+        "IdentityPoolId": "us-east-1:8c582fef-1d36-4dd1-b0fa-20ab7c3ca1eb",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:567155312519:userpool/us-east-1_8rzdOpiz5",
+        "IdentityPoolName": "testAuthIdentityPool__dev",
+        "UserPoolName": "clientmobile"
+      },
+      "lastPushTimeStamp": "2022-05-20T14:17:21.098Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-clientmobile-dev-170406-deployment/amplify-cfn-templates/auth/clientmobile-cloudformation-template.json",
+        "logicalId": "authclientmobile"
+      },
+      "lastPushDirHash": "jh0KxTp8n3B/uuQilmfgQHH3lT0="
+    }
+  },
+  "storage": {
+    "s3clientmobilestorage22ef2adf": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2022-05-20T14:17:21.881Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-clientmobile-dev-170406-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storages3clientmobilestorage22ef2adf"
+      },
+      "output": {
+        "BucketName": "clientmobile-storage-22ef2adf170406-dev",
+        "Region": "us-east-1"
+      },
+      "lastPushDirHash": "SHOm9P8agssfQs5o+e/Rhy44bfQ="
+    }
+  }
+}

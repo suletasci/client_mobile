@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3clientmobilestorage22ef2adf",
+  "bucketName": "clientmobile-storage-22ef2adf",
+  "policyUUID": "33911c07",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}
